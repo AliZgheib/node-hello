@@ -1,2 +1,3 @@
 #!/bin/bash
-echo 'after install'
+
+echo 'After install'

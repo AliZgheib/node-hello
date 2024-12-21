@@ -1,2 +1,3 @@
 #!/bin/bash
-echo 'before install'
+
+echo 'Before install'
