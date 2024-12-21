@@ -5,10 +5,10 @@ files:
     destination: /
 
 hooks:
-  # ApplicationStop:
-  #   - location: scripts/application-stop.sh
-  #     timeout: 300
-  #     runas: ec2-user
+  ApplicationStop:
+    - location: scripts/application-stop.sh
+      timeout: 300
+      runas: ec2-user
 
   BeforeInstall:
     - location: scripts/before_install.sh
