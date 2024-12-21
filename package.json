@@ -4,12 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --name 'node-hello'",
-    "stop": "pm2 stop 'node-hello'",
-    "restart": "pm2 restart 'node-hello'",
-    "delete": "pm2 delete 'node-hello'",
-    "save": "pm2 save",
-    "pm2-list": "pm2 list",
+    "start": "node index.js",
     "test": "echo 'Running tests...'",
     "build": "echo 'Running build...'"
   },
@@ -23,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/johnpapa/node-hello/issues"
   },
-  "homepage": "https://github.com/johnpapa/node-hello#readme",
-  "devDependencies": {
-    "pm2": "^5.4.3"
-  }
+  "homepage": "https://github.com/johnpapa/node-hello#readme"
 }

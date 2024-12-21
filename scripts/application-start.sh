@@ -3,7 +3,7 @@
 echo "Starting Node.js application with PM2"
 
 # Start the app with PM2
-npm run start
+npx pm2 start index.js --name "node-hello"
 
 # Save the PM2 process list (for persistence across reboots)
-npm run save
+npx pm2 save
