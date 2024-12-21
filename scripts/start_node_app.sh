@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# Start the application using PM2
-pm2 start index.js --name "node-hello"
+# Start the app with PM2
+npm run start
 
-# Save the PM2 process list to restart the app on reboot
-pm2 save
+# Save the PM2 process list (for persistence across reboots)
+npm run save
+
 
 # Exit the script successfully
 exit 0
