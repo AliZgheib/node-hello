@@ -3,7 +3,7 @@ const port = process.env.PORT || 80;
 
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
-  const msg = process.env.MSG || 'Hello AZ! after appspec update\n'
+  const msg = process.env.MSG || 'Hello AZ!\n'
   res.end(msg);
 });
 
