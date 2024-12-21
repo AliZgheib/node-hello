@@ -1,0 +1,16 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/node-hello
+
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies.sh
+      timeout: 300
+      runas: root
+
+  ApplicationStart:
+    - location: scripts/start_node_app.sh
+      timeout: 300
+      runas: root
